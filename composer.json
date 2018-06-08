@@ -1,0 +1,49 @@
+{
+    "name": "palokankare/laravel-api-versions",
+    "description": "Implement date based versioning to Laravel Form Request and Resources for your API",
+    "keywords": [
+        "api",
+        "klopal",
+        "laravel-api-changes"
+    ],
+    "homepage": "https://github.com/klopal/laravel-api-versions",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kalle Palokankare",
+            "email": "kalle@klopal.com",
+            "homepage": "https://klopal.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.6.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Klopal\\ApiVersions\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Klopal\\ApiVersions\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Klopal\\ApiVersions\\ApiVersionsServiceProvider"
+            ]
+        }
+    }
+}
